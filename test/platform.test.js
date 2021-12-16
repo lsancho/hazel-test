@@ -17,11 +17,6 @@ describe('Platform', () => {
     expect(result).toBe('dmg')
   })
 
-  it('Should parse win32', () => {
-    const result = platform('hyper-2.1.1-win32.zip')
-    expect(result).toBe('win32')
-  })
-
   it('Should return false for unknown files', () => {
     const result = platform('hi.txt')
     expect(result).toBe(false)
